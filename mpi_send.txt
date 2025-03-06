@@ -1,0 +1,11 @@
+MPI_Send(void buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm)
+
+Sends data to a specific process.
+
+Variables: 
+buf: Data buffer.
+count: Number of elements.
+datatype: Data type (e.g., MPI_INT).
+dest: Destination rank.
+tag: Message identifier.
+comm: Communicator.
