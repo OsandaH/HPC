@@ -1,0 +1,7 @@
+Parallelizing Loops in OpenMP
+
+Sequential Execution: In a standard for loop, iterations are executed one after another.
+Parallel Execution with OpenMP: The #pragma omp parallel for directive distributes iterations among threads.
+Block Partitioning: Default OpenMP method assigns iterations in contiguous blocks to threads.
+Cyclic Distribution: Distributes iterations more evenly by assigning them cyclically across threads.
+Block-Cyclic Distribution: Combines block and cyclic partitioning for better workload balance.
