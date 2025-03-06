@@ -1,3 +1,6 @@
+MPI provides derived datatypes to efficiently handle complex data structures and optimize communication.
+
+Advantages:
 Fewer Function Calls: Reduces the need for multiple MPI_Send() and MPI_Recv() calls.
 Less Error-Prone: Avoids mistakes in manually specifying element counts and data types.
 Optimized Communication: Allows MPI to efficiently handle complex data structures (e.g., structs, arrays).
