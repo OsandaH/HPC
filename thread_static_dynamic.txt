@@ -1,0 +1,10 @@
+Shared Memory & Dynamic Threads
+•	Shared variables: Accessible by all threads.
+•	Private variables: Only accessed by a single thread.
+•	Master thread: Manages tasks and creates worker threads dynamically.
+•	Worker threads: Perform tasks, then terminate and rejoin the master thread.
+•	Optimized resource usage: Threads only exist when active.
+
+Static vs. Dynamic Threads
+Static Threads are created once at the start and have fixed resource allocation. They may lead to idle threads if not fully utilized, as seen in fixed thread pools.
+Dynamic Threads are created and destroyed at runtime, allocating resources as needed. This approach avoids unnecessary thread overhead, like a web server spawning new threads for each client.
