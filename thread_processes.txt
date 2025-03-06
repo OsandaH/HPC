@@ -12,12 +12,12 @@ Improved Scalability: Can handle increasing workloads.
 Enhanced Security: Process separation limits security risks.
 
 3. Processes
-•	Instance of a running program.
-•	Has private memory blocks (stack, heap).
-•	OS allocates resources using process descriptors.
-•	Example: A text editor process should not interfere with a browser process.
+	Instance of a running program.
+	Has private memory blocks (stack, heap).
+	OS allocates resources using process descriptors.
+	Example: A text editor process should not interfere with a browser process.
 
 4. Threads
-•	Lighter-weight processes within the same memory space.
-•	Threads share memory except for individual stacks and program counters.
-•	Used for efficient shared-memory parallelism.
+	Lighter-weight processes within the same memory space.
+	Threads share memory except for individual stacks and program counters.
+	Used for efficient shared-memory parallelism.
