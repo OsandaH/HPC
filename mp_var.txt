@@ -1,0 +1,8 @@
+Scope of Variables in OpenMP
+Variables in a parallel region can be shared or private based on declarations.
+
+Types of variable scopes: 
+    Shared: Accessible by all threads, modifications affect all.
+    Private: Each thread gets its own copy, modifications do not affect others.
+    Firstprivate: Like private, but initialized with the value outside the parallel region.
+    Lastprivate: Retains the last loop iteration value after parallel execution.
