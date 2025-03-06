@@ -1,0 +1,10 @@
+Blocking vs. buffering Communication
+MPI_Send Buffering & Deadlocks
+  Small messages may be buffered, allowing MPI_Send to return immediately.
+  Large messages may block, leading to deadlocks if all processes are waiting on MPI_Recv.
+
+Deadlock Example
+If all processes execute MPI_Send first and block, none can reach MPI_Recv, causing a deadlock.
+Solution:
+  Change send/receive order.
+  Use non-blocking communication (MPI_Isend, MPI_Irecv).
