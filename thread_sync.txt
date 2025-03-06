@@ -1,0 +1,15 @@
+Race Condition
+•	Occurs when multiple threads access and modify a shared resource simultaneously.
+•	Leads to unpredictable and incorrect results.
+•	Example: Two threads incrementing a counter may interfere, causing incorrect final values.
+
+2. Thread Synchronization
+•	Ensures orderly execution in multi-threaded programs.
+•	Prevents unexpected behavior and system crashes.
+•	Used to coordinate access to shared resources.
+
+3. Mutex (Mutual Exclusion)
+•	A synchronization tool that restricts access to a shared resource.
+•	Only one thread can access the resource at a time.
+•	Threads must acquire a mutex before modifying shared data.
+•	Other threads are blocked until the mutex is released.
