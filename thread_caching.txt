@@ -1,8 +1,8 @@
 Basics of Caching
-•	Cache memory is made of SRAM (faster, but more expensive than DRAM).
-•	Cache stores data in blocks (cache lines) for quick access.
-•	Cache hit: Requested data is found in the cache.
-•	Cache miss: Data is fetched from main memory, slowing performance.
-•	Locality principle: 
-o	Spatial locality: Nearby memory locations are likely to be accessed soon.
-o	Temporal locality: Recently accessed data is likely to be accessed again.
+	Cache memory is made of SRAM (faster, but more expensive than DRAM).
+	Cache stores data in blocks (cache lines) for quick access.
+	Cache hit: Requested data is found in the cache.
+	Cache miss: Data is fetched from main memory, slowing performance.
+	Locality principle: 
+	Spatial locality: Nearby memory locations are likely to be accessed soon.
+	Temporal locality: Recently accessed data is likely to be accessed again.
