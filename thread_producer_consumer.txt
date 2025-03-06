@@ -1,0 +1,7 @@
+Producer-Consumer Problem (Synchronization Example)
+•	Producers add data to a buffer (only if not full).
+•	Consumers remove data (only if not empty).
+•	Uses bounded buffer to prevent overflow/underflow.
+•	Synchronization via mutex & condition variables: 
+o	pthread_cond_wait(&empty, &mutex): Waits when the buffer is full/empty.
+o	pthread_cond_signal(&full/empty): Wakes up waiting threads.
