@@ -1,18 +1,18 @@
 Race Condition
-•	Occurs when multiple threads access and modify a shared resource simultaneously.
-•	Leads to unpredictable and incorrect results.
-•	Example: Two threads incrementing a counter may interfere, causing incorrect final values.
+  Occurs when multiple threads access and modify a shared resource simultaneously.
+  Leads to unpredictable and incorrect results.
+  Example: Two threads incrementing a counter may interfere, causing incorrect final values.
 
 2. Thread Synchronization
-•	Ensures orderly execution in multi-threaded programs.
-•	Prevents unexpected behavior and system crashes.
-•	Used to coordinate access to shared resources.
+  Ensures orderly execution in multi-threaded programs.
+  Prevents unexpected behavior and system crashes.
+  Used to coordinate access to shared resources.
 
 3. Mutex (Mutual Exclusion)
-•	A synchronization tool that restricts access to a shared resource.
-•	Only one thread can access the resource at a time.
-•	Threads must acquire a mutex before modifying shared data.
-•	Other threads are blocked until the mutex is released.
+  A synchronization tool that restricts access to a shared resource.
+  Only one thread can access the resource at a time.
+  Threads must acquire a mutex before modifying shared data.
+  Other threads are blocked until the mutex is released.
 
 pthread_mutex_init()	Initializes a mutex.
 pthread_mutex_lock()	Locks the mutex (blocks other threads).
@@ -20,5 +20,5 @@ pthread_mutex_unlock()	Unlocks the mutex (allows other threads to access).
 pthread_mutex_destroy()	Destroys a mutex when no longer needed.
 
 Using Mutex for Shared Variable
-•	Multiple threads increment a shared variable.
-•	Mutex ensures correct increments without race conditions.
+  Multiple threads increment a shared variable.
+  Mutex ensures correct increments without race conditions.
