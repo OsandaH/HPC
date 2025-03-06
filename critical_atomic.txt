@@ -1,0 +1,8 @@
+•	Critical Directive (#pragma omp critical): Ensures only one thread executes a block at a time, preventing race conditions.
+•	Atomic Directive (#pragma omp atomic): Performs atomic operations on shared variables to avoid data corruption.
+
+Atomic Directive Clauses
+•	Write: Ensures atomic assignment of a new value.
+•	Update: Ensures atomic modification (e.g., increment, decrement).
+•	Read: Ensures atomic reading of a shared variable.
+•	Capture: Captures the current value, modifies it, and stores the result atomically.
