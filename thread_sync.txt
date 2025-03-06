@@ -13,3 +13,8 @@ Race Condition
 •	Only one thread can access the resource at a time.
 •	Threads must acquire a mutex before modifying shared data.
 •	Other threads are blocked until the mutex is released.
+
+pthread_mutex_init()	Initializes a mutex.
+pthread_mutex_lock()	Locks the mutex (blocks other threads).
+pthread_mutex_unlock()	Unlocks the mutex (allows other threads to access).
+pthread_mutex_destroy()	Destroys a mutex when no longer needed.
