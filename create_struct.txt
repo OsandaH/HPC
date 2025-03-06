@@ -3,8 +3,8 @@ Creates a custom MPI datatype representing a struct.
 Syntax:
 MPI_Type_create_struct(int count, int blockLengths[], MPI_Aint displacements[], MPI_Datatype types[], MPI_Datatype *newtype);
 Variables:
-•	count: Number of blocks in the struct.
-•	blockLengths[]: Array specifying the number of elements in each block.
-•	displacements[]: Byte offsets of each block in memory.
-•	types[]: MPI datatypes for each block.
-•	newtype: Output parameter storing the new MPI datatype.
+  count: Number of blocks in the struct.
+  blockLengths[]: Array specifying the number of elements in each block.
+  displacements[]: Byte offsets of each block in memory.
+  types[]: MPI datatypes for each block.
+  newtype: Output parameter storing the new MPI datatype.
