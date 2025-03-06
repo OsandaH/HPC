@@ -1,27 +1,27 @@
 Thread Synchronization Using Barriers
-•	Barrier: A synchronization point where all threads must wait before proceeding.
-•	Ensures order & dependencies between threads.
-•	Example: If BARRIER_NUM = 3, only 3 threads can proceed together.
-•	Remaining threads must wait until the next set of BARRIER_NUM threads arrives.
+	Barrier: A synchronization point where all threads must wait before proceeding.
+	Ensures order & dependencies between threads.
+	Example: If BARRIER_NUM = 3, only 3 threads can proceed together.
+	Remaining threads must wait until the next set of BARRIER_NUM threads arrives.
 
 Read-Write Locks
-•	Used for shared resources in multi-threaded programs.
-•	Read Lock: Multiple threads can read at the same time.
-•	Write Lock: Only one thread can write; all others must wait.
-•	Improves performance in scenarios with many read operations and few writes.
-•	Example: One thread updates a particle’s position, another thread reads it.
-•	Prevents race conditions, ensuring correct values are read and written.
+	Used for shared resources in multi-threaded programs.
+	Read Lock: Multiple threads can read at the same time.
+	Write Lock: Only one thread can write; all others must wait.
+	Improves performance in scenarios with many read operations and few writes.
+	Example: One thread updates a particle’s position, another thread reads it.
+	Prevents race conditions, ensuring correct values are read and written.
 
 Deadlocks
-•	Occurs when two or more threads wait indefinitely for each other.
-•	Example: 
+	Occurs when two or more threads wait indefinitely for each other.
+	Example: 
     Thread 1 locks A, waits for B.
     Thread 2 locks B, waits for A → Deadlock occurs.
-•	Causes: 
+	Causes: 
     Improper use of synchronization/barriers.
     Circular dependency between locks.
 
 Deadlock Prevention: Lock Ordering
-•	Define a global order for acquiring locks.
-•	Ensure all threads follow the same order to avoid circular waiting.
-•	Eliminates one of the four conditions required for a deadlock.
+	Define a global order for acquiring locks.
+	Ensure all threads follow the same order to avoid circular waiting.
+	Eliminates one of the four conditions required for a deadlock.
