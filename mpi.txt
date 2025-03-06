@@ -1,21 +1,21 @@
 Distributed-Memory Programming with MPI
-•	Shared-Memory System: Multiple processors access a common memory.
-•	Distributed-Memory System: Each processing unit has its own local memory; communication occurs via message passing.
-•	Advantages of Distributed Memory: Scalability, fault tolerance, flexibility.
-•	SPMD Model (Single Program Multiple Data): All processes execute the same program but work on different data sets.
+	Shared-Memory System: Multiple processors access a common memory.
+	Distributed-Memory System: Each processing unit has its own local memory; communication occurs via message passing.
+	Advantages of Distributed Memory: Scalability, fault tolerance, flexibility.
+	SPMD Model (Single Program Multiple Data): All processes execute the same program but work on different data sets.
 
 MPI (Message Passing Interface) Basics
-•	MPI enables communication between distributed-memory systems.
-•	Processes communicate using message-passing functions.
-•	MPI follows the SPMD model for parallelism.
-•	MPI Communicator: A group of processes that can exchange messages (e.g., MPI_COMM_WORLD).
+	MPI enables communication between distributed-memory systems.
+	Processes communicate using message-passing functions.
+	MPI follows the SPMD model for parallelism.
+	MPI Communicator: A group of processes that can exchange messages (e.g., MPI_COMM_WORLD).
 
 Important MPI Functions & Their Variables
 1. MPI Initialization & Process Management
-•	**MPI_Init(int *argc, char *argv) → Initializes MPI environment.
-•	*MPI_Comm_rank(MPI_Comm comm, int rank) → Gets process ID (rank).
-•	*MPI_Comm_size(MPI_Comm comm, int size) → Gets total number of processes.
-•	MPI_Finalize(void) → Terminates MPI execution.
+	**MPI_Init(int *argc, char *argv) → Initializes MPI environment.
+	*MPI_Comm_rank(MPI_Comm comm, int rank) → Gets process ID (rank).
+	*MPI_Comm_size(MPI_Comm comm, int size) → Gets total number of processes.
+	MPI_Finalize(void) → Terminates MPI execution.
 
 
 
