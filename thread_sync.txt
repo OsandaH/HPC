@@ -18,3 +18,7 @@ pthread_mutex_init()	Initializes a mutex.
 pthread_mutex_lock()	Locks the mutex (blocks other threads).
 pthread_mutex_unlock()	Unlocks the mutex (allows other threads to access).
 pthread_mutex_destroy()	Destroys a mutex when no longer needed.
+
+Using Mutex for Shared Variable
+•	Multiple threads increment a shared variable.
+•	Mutex ensures correct increments without race conditions.
