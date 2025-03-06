@@ -1,0 +1,11 @@
+MPI_Recv(void buf, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm comm, MPI_Status status)
+
+Receives data from a process.
+
+buf: Data buffer.
+count: Number of elements.
+datatype: Data type.
+source: Source rank.
+tag: Message identifier.
+comm: Communicator.
+status: Stores information about the received message.
