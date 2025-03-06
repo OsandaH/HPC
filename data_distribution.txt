@@ -1,0 +1,4 @@
+Data Distribution Methods
+1.	Block Distribution: Assigns contiguous chunks of data to each process.
+2.	Cyclic Distribution: Distributes data in a round-robin fashion.
+3.	Block-Cyclic Distribution: Mixes block and cyclic distribution for better load balancing.
