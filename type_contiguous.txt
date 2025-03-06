@@ -1,0 +1,8 @@
+MPI_Type_contiguous
+Defines a contiguous block of elements in memory.
+Syntax:
+MPI_Type_contiguous(int count, MPI_Datatype oldtype, MPI_Datatype *newtype);
+Variables:
+•	count: Number of contiguous blocks.
+•	oldtype: Datatype of the elements.
+•	newtype: Address of the resulting MPI datatype.
