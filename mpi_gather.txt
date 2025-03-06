@@ -5,11 +5,11 @@ MPI_Gather(void *sendbuf, int sendcount, MPI_Datatype sendtype,
            void *recvbuf, int recvcount, MPI_Datatype recvtype, 
            int root, MPI_Comm comm);
 
-•	sendbuf: Data buffer containing the value each process sends.
-•	sendcount: Number of elements each process sends.
-•	sendtype: Data type of elements.
-•	recvbuf: Buffer at the root process where data is collected.
-•	recvcount: Number of elements received per process.
-•	recvtype: Data type of received elements.
-•	root: Rank of the process collecting the data.
-•	comm: Communicator (MPI_COMM_WORLD).
+	sendbuf: Data buffer containing the value each process sends.
+	sendcount: Number of elements each process sends.
+	sendtype: Data type of elements.
+	recvbuf: Buffer at the root process where data is collected.
+	recvcount: Number of elements received per process.
+	recvtype: Data type of received elements.
+	root: Rank of the process collecting the data.
+	comm: Communicator (MPI_COMM_WORLD).
