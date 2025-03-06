@@ -1,0 +1,7 @@
+MPI_Ssend (Synchronous Send)
+MPI_Ssend ensures the message is not buffered and waits until the receiver starts receiving.
+Syntax:
+MPI_Ssend(void *buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm);
+Variables:
+•	Same as MPI_Send.
+•	Ensures sender and receiver synchronize correctly.
