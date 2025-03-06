@@ -1,0 +1,25 @@
+Introduction to OpenMP and Shared Memory Systems
+    OpenMP is a shared-memory parallel programming model used in high-performance computing.
+    It works with threads, allowing multiple CPUs/cores to access and modify shared memory.
+    Shared-memory systems have a unified address space, meaning all cores can read/write to the same memory locations.
+
+Threads in Shared Memory Systems
+    Threads allow multiple computations to run in parallel, with private and shared data.
+    Modern processors support hyperthreading, allowing multiple threads per core.
+    Communication between threads happens via shared memory, with one thread writing while others read.
+
+OpenMP Basics
+    OpenMP is easier to use than Pthreads since it provides higher-level abstractions.
+    It is portable across platforms and can integrate with MPI or CUDA.
+    Scalability is better within shared-memory architectures.
+
+Running Multiple Threads in OpenMP
+    #pragma omp parallel num_threads(4) creates four parallel threads.
+    omp_set_num_threads(n) sets the number of threads dynamically.
+    omp_get_thread_num() returns the thread's ID (useful for task allocation).
+    omp_get_num_threads() retrieves the total number of threads in a parallel region.
+
+Error Checking in OpenMP
+    If OpenMP is unsupported by the compiler, _OPENMP macro ensures compatibility.
+    Instead of directly including omp.h, conditional macros check whether OpenMP is available.
+
