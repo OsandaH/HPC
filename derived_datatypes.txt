@@ -1,0 +1,10 @@
+Fewer Function Calls: Reduces the need for multiple MPI_Send() and MPI_Recv() calls.
+Less Error-Prone: Avoids mistakes in manually specifying element counts and data types.
+Optimized Communication: Allows MPI to efficiently handle complex data structures (e.g., structs, arrays).
+Better Performance: MPI can optimize memory layout and data transfer for improved efficiency.
+
+Disadvantages:
+Complexity: Creating derived datatypes requires extra setup using MPI_Type_create_struct(), MPI_Type_commit(), etc.
+Debugging Challenges: Errors in datatype definition can be hard to trace.
+Overhead in Small Transfers: May add unnecessary complexity for simple messages.
+Portability Concerns: Some implementations may not optimize all derived datatypes equally across different systems.
