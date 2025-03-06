@@ -1,0 +1,9 @@
+MPI_Reduce(void *sendbuf, void *recvbuf, int count, MPI_Datatype datatype, MPI_Op op, int root, MPI_Comm comm)
+
+sendbuf: Data to be reduced.
+recvbuf: Stores the reduced result (at root).
+count: Number of elements.
+datatype: Type of elements (e.g., MPI_INT).
+op: Reduction operation (MPI_SUM, MPI_MAX, etc.).
+root: Process where the result is stored.
+comm: Communicator.
