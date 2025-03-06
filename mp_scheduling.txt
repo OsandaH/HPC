@@ -1,0 +1,16 @@
+Scheduling Methods in OpenMP
+Static Scheduling:
+    Iterations are pre-assigned to threads before execution.
+    Suitable for uniform workloads.
+    Example: #pragma omp parallel for schedule(static, 2)
+Dynamic Scheduling:
+    Threads request new chunks after finishing previous ones.
+    Useful for workloads with varying iteration times.
+    Example: #pragma omp parallel for schedule(dynamic, 2)
+Guided Scheduling:
+    Chunk size decreases as execution progresses.
+    Helps balance irregular workloads.
+    Example: #pragma omp parallel for schedule(guided, 2)
+Runtime Scheduling:
+    Schedule is determined at runtime using OMP_SCHEDULE environment variable.
+    Example: export OMP_SCHEDULE="dynamic,4"
