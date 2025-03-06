@@ -1,0 +1,11 @@
+1.	CPU Architecture:
+Modern CPUs have multiple cores that execute parallel tasks. Each core has its own Control Unit (CU) and Arithmetic Logic Unit (ALU) to process instructions and perform calculations. CPU caches (L1, L2, L3) reduce access times to external memory (DRAM).
+2.	GPU Architecture:
+GPUs contain thousands of lightweight cores optimized for parallel tasks. Unlike CPUs, GPUs lack L3 cache and prioritize high-speed parallel computations, making them suitable for handling large data sets efficiently.
+3.	CUDA Toolkit:
+NVIDIA's CUDA Toolkit provides essential tools like GPU-accelerated libraries, a C/C++ compiler, and debugging tools. It supports application development on platforms ranging from embedded systems to supercomputers.
+4.	CUDA Execution Model:
+CUDA organizes work through threads, thread blocks, and kernel grids. Threads are the smallest execution units, grouped into blocks, which are executed by Streaming Multiprocessors (SMs) to distribute workloads across the GPU.
+5.	Warps and SIMD Model:
+Threads in a block are further divided into warps (32 threads). Each warp executes the same instruction on different data (Single Instruction, Multiple Data – SIMD), and the warp scheduler manages and switches between active warps to maximize efficiency.
+
