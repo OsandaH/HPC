@@ -1,0 +1,25 @@
+Virtual Memory
+•	Expands usable memory beyond physical RAM by using disk space (swap).
+•	Page table maps virtual addresses to physical memory locations.
+•	Page faults occur when requested data is not in RAM, requiring disk access.
+
+Processes & Multitasking
+•	Process: A running instance of a program with its own memory and resources.
+•	Multitasking: 
+o	Time-sharing: CPU switches between processes using time slices.
+o	Context switching: Saves and loads process states.
+
+Threads & Multithreading
+•	Thread: A smaller unit within a process, sharing the same memory.
+•	Multithreading improves responsiveness and efficiency.
+•	Example: ATMs handle multiple user transactions using separate threads.
+
+
+Instruction-Level Parallelism
+•	Pipelining: Divides instruction execution into stages for higher throughput.
+•	Superscalar execution: Multiple instructions executed in parallel.
+
+CPU vs Core vs Thread
+•	CPU: The main processing unit of a computer.
+•	Core: An independent processing unit within a CPU.
+•	Thread: A sequence of instructions executed by a core.
