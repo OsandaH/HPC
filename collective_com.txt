@@ -1,0 +1,9 @@
+Collective Communication
+
+Involves multiple processes working together.
+
+MPI_Bcast(): Broadcasts data from one process to all others.
+MPI_Scatter(): Distributes data among processes.
+MPI_Gather(): Collects data from all processes.
+MPI_Reduce(): Performs operations (sum, max, min) across processes.
+MPI_Allreduce(): Similar to MPI_Reduce(), but shares results with all processes.
