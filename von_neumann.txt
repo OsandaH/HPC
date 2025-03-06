@@ -1,0 +1,29 @@
+Von Neumann Architecture
+Consists of 
+  Main memory
+  CPU/ Processor/ Core
+  connection between CPU and the main memory.
+ 
+Main memory has memory locations to save data and instructions
+Memory location has an address to access the location and its contents. 
+
+The CPU can be divided into
+  Control unit – decides which instruction to execute 
+  ALU – executes the actual instructions.
+  Registers – fast storage units which stores data of the CPU and the info about the state of an executing program
+  Program counters – special registers to store the address of the next 
+
+Interconnect – transfers instructions and data between the main memory and CPU
+
+Uses a sequential instruction execution model (one instruction at a time).
+
+The Von Neumann bottleneck occurs as both data and instructions share the same bus.
+
+Fetching (reading from memory) and storing (writing to memory) are key memory operations.
+
+
+
+Overcoming the Von Neumann Bottleneck
+•	Caching: Stores frequently accessed data closer to the CPU.
+•	Wider interconnects: Transfers more data per memory access.
+•	Pipeline execution: Allows multiple instructions to be processed in stages.
