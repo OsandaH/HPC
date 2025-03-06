@@ -14,3 +14,9 @@ Guided Scheduling:
 Runtime Scheduling:
     Schedule is determined at runtime using OMP_SCHEDULE environment variable.
     Example: export OMP_SCHEDULE="dynamic,4"
+
+
+Choosing the Right Scheduling Method
+	Uniform workload: Use static scheduling.
+	Unpredictable execution time: Use dynamic or guided scheduling.
+	Testing different strategies: Use runtime scheduling
