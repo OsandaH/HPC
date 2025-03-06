@@ -1,0 +1,23 @@
+Concurrency
+  Allows multiple tasks to make progress simultaneously.
+  Achieved using processes and threads.
+  inter-process communication (IPC): Data exchange between processes.
+  Inter-thread communication (ITC): Communication between threads of the same process.
+
+2. Advantages of Using Multiple Processes
+Increased Performance: Parallel execution speeds up tasks.
+Improved Reliability: One process failing doesn’t affect others.
+Better Resource Utilization: Efficient CPU/core usage.
+Improved Scalability: Can handle increasing workloads.
+Enhanced Security: Process separation limits security risks.
+
+3. Processes
+•	Instance of a running program.
+•	Has private memory blocks (stack, heap).
+•	OS allocates resources using process descriptors.
+•	Example: A text editor process should not interfere with a browser process.
+
+4. Threads
+•	Lighter-weight processes within the same memory space.
+•	Threads share memory except for individual stacks and program counters.
+•	Used for efficient shared-memory parallelism.
