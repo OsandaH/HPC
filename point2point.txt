@@ -1,0 +1,5 @@
+Point-to-Point Communication
+  Direct message passing between two processes.
+  Functions: MPI_Send(), MPI_Recv()
+  Advantages: Gives precise control over data transfer.
+  Challenges: Requires processes to coordinate properly (one must send while the other receives).
