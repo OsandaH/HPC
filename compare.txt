@@ -1,0 +1,5 @@
+1. **`pthread` (POSIX Threads)** is a low-level threading library used for shared-memory parallelism, requiring explicit thread creation, synchronization, and management using mutexes and condition variables. It is best suited for fine-grained parallelism in multi-threaded applications running on a single machine.
+
+2. **`OpenMP` (Open Multi-Processing)** is a higher-level API that simplifies shared-memory parallel programming using compiler directives (`#pragma omp`), making it easier to parallelize loops and tasks in scientific computing and HPC workloads. It is designed for single-node parallelism, where multiple threads share the same memory space.
+
+3. **`OpenMPI` (Open Message Passing Interface)** is a distributed-memory parallel programming model where multiple processes run independently and communicate using explicit message passing (`MPI_Send`, `MPI_Recv`). It is used for large-scale parallel computing on clusters and supercomputers, making it ideal for applications that require high scalability across multiple nodes.
