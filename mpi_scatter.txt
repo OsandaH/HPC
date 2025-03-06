@@ -5,12 +5,12 @@ MPI_Scatter(void *sendbuf, int sendcount, MPI_Datatype sendtype,
             void *recvbuf, int recvcount, MPI_Datatype recvtype, 
             int root, MPI_Comm comm);
 Variables:
-•	sendbuf: Pointer to the data array at the root process.
-•	sendcount: Number of elements sent to each process.
-•	sendtype: Data type of elements (e.g., MPI_INT).
-•	recvbuf: Buffer where each process stores its received portion.
-•	recvcount: Number of elements received per process.
-•	recvtype: Data type of received elements.
-•	root: Rank of the process sending the data.
-•	comm: Communicator (MPI_COMM_WORLD).
+	sendbuf: Pointer to the data array at the root process.
+	sendcount: Number of elements sent to each process.
+	sendtype: Data type of elements (e.g., MPI_INT).
+	recvbuf: Buffer where each process stores its received portion.
+	recvcount: Number of elements received per process.
+	recvtype: Data type of received elements.
+	root: Rank of the process sending the data.
+	comm: Communicator (MPI_COMM_WORLD).
 
